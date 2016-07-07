@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class Entry {
+    let timestamp: NSDate
+    let title: String
+    let bodyText: String
+    
+    init(timestamp: NSDate, title: String, bodyText: String){
+        self.title = title
+        self.bodyText = bodyText
+        self.timestamp = timestamp
+    }
+    
+}
