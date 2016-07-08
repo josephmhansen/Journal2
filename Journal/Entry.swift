@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Entry {
+class Entry: Equatable{
     let timestamp: NSDate
     let title: String
     let bodyText: String
@@ -19,4 +19,10 @@ class Entry {
         self.timestamp = timestamp
     }
     
+    
+    }
+func == (lhs: Entry, rhs: Entry) -> Bool {
+    return lhs.title == rhs.title && lhs.bodyText == rhs.bodyText && lhs.timestamp == rhs.timestamp
 }
+
+

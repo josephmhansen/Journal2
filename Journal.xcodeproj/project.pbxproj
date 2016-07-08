@@ -13,6 +13,9 @@
 		724F14291D2F01A800CE9A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724F14281D2F01A800CE9A4C /* Assets.xcassets */; };
 		724F142C1D2F01A800CE9A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724F142A1D2F01A800CE9A4C /* LaunchScreen.storyboard */; };
 		724F14341D2F039B00CE9A4C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F14331D2F039B00CE9A4C /* Entry.swift */; };
+		724F14391D2F0A1A00CE9A4C /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F14381D2F0A1A00CE9A4C /* EntryController.swift */; };
+		724F143B1D2F1C6100CE9A4C /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F143A1D2F1C6100CE9A4C /* EntryListTableViewController.swift */; };
+		724F143D1D2F24D500CE9A4C /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F143C1D2F24D500CE9A4C /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		724F142B1D2F01A800CE9A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724F142D1D2F01A800CE9A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724F14331D2F039B00CE9A4C /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		724F14381D2F0A1A00CE9A4C /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		724F143A1D2F1C6100CE9A4C /* EntryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		724F143C1D2F24D500CE9A4C /* EntryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		724F14201D2F01A800CE9A4C /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				724F14361D2F095E00CE9A4C /* Model */,
+				724F14371D2F098E00CE9A4C /* ViewController */,
+				724F14351D2F094E00CE9A4C /* ModelController */,
 				724F14211D2F01A800CE9A4C /* AppDelegate.swift */,
 				724F14231D2F01A800CE9A4C /* ViewController.swift */,
-				724F14331D2F039B00CE9A4C /* Entry.swift */,
 				724F14251D2F01A800CE9A4C /* Main.storyboard */,
 				724F14281D2F01A800CE9A4C /* Assets.xcassets */,
 				724F142A1D2F01A800CE9A4C /* LaunchScreen.storyboard */,
 				724F142D1D2F01A800CE9A4C /* Info.plist */,
 			);
 			path = Journal;
+			sourceTree = "<group>";
+		};
+		724F14351D2F094E00CE9A4C /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				724F14381D2F0A1A00CE9A4C /* EntryController.swift */,
+			);
+			name = ModelController;
+			sourceTree = "<group>";
+		};
+		724F14361D2F095E00CE9A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				724F14331D2F039B00CE9A4C /* Entry.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		724F14371D2F098E00CE9A4C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				724F143A1D2F1C6100CE9A4C /* EntryListTableViewController.swift */,
+				724F143C1D2F24D500CE9A4C /* EntryDetailViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				724F14341D2F039B00CE9A4C /* Entry.swift in Sources */,
+				724F143B1D2F1C6100CE9A4C /* EntryListTableViewController.swift in Sources */,
 				724F14241D2F01A800CE9A4C /* ViewController.swift in Sources */,
+				724F14391D2F0A1A00CE9A4C /* EntryController.swift in Sources */,
+				724F143D1D2F24D500CE9A4C /* EntryDetailViewController.swift in Sources */,
 				724F14221D2F01A800CE9A4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
